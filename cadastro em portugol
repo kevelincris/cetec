@@ -1,0 +1,39 @@
+programa
+{
+	
+	funcao inicio() 
+	{
+		inteiro matricula[8],nr_matricula=0
+    cadeia nome[8],sobrenome[8], nome_aluno, sobrenome_aluno
+		
+		// preenche o vetor
+		para (inteiro posicao = 0; posicao < 8; posicao++)
+		{
+      escreva("usuario  digite o numero da matricula do aluno: \n")
+      leia(nr_matricula)
+			matricula[posicao] = nr_matricula // Sorteia um número e atribui à posição do vetor
+      escreva("usuario  digite o nome do aluno: \n")
+      leia(nome_aluno)
+      nome[posicao]=nome_aluno
+      escreva("usuario  digite o sobrenome do aluno: \n")
+      leia(sobrenome_aluno)
+      nome[posicao]=sobrenome_aluno
+		}
+
+		// Exibe o vetor na ordem original
+		escreva ("Vetor na ordem original:\n")
+		
+		para(inteiro posicao = 0; posicao < 8; posicao++)
+		{
+			escreva (matricula[posicao], " ")
+		}
+		
+		// Exibe o vetor na ordem inversa
+		escreva ("\n\nVetor na ordem inversa:\n")
+		
+		para(inteiro posicao = 8; posicao >=0; posicao--)
+		{
+			escreva (matricula[posicao], " ")
+		}
+	}
+}
